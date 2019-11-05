@@ -1,0 +1,29 @@
+<h1>Them Sach Moi</h1>
+<i>{{message}}</i>
+<form novalidate (ngSubmit)="editBook()" [formGroup]="data" >
+  <table>
+    <tr><td><input type="hidden" formControlName="id"></td></tr>
+    <tr>
+      <td>Ten</td>
+      <td>
+        <input type="text" formControlName="title">
+      </td>
+    </tr>
+    <tr>
+      <td>Tac gia</td>
+      <td>
+        <input type="text" formControlName="author">
+      </td>
+    </tr>
+    <tr>
+      <td>Mo ta</td>
+      <td>
+        <input type="text" formControlName="description">
+      </td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Sua"></td>
+      <td><button [routerLink]="['/home']">Thoat</button></td>
+    </tr>
+  </table>
+</form>

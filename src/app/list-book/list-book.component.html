@@ -1,0 +1,16 @@
+<p>Co {{lists.length}} cuon sach</p>
+<table>
+  <tr>
+    <td>#</td>
+    <td>Ten Sach</td>
+    <td>Tac gia</td>
+    <td colspan="2"><a [routerLink]="['/create']">Them moi</a></td>
+  </tr>
+  <tr *ngFor="let item of lists, index as i">
+    <td>{{i + 1}}</td>
+    <td><a [routerLink]="['/detail',item.id]">{{item.title}}</a></td>
+    <td>{{item.author}}</td>
+    <td><a [routerLink]="['/edit',item.id]">Sua</a></td>
+    <td><a [routerLink]="['/delete',item.id]">Xoa</a></td>
+  </tr>
+</table>

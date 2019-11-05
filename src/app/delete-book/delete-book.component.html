@@ -1,0 +1,22 @@
+<h2>Xoa Sach</h2>
+<p>{{message}}</p>
+<table>
+  <tr>
+    <td>Ten sach: </td>
+    <td>{{book.title}}</td>
+  </tr>
+  <tr>
+    <td>Tac gia: </td>
+    <td>{{book.author}}</td>
+  </tr>
+  <tr>
+    <td>Mo ta</td>
+    <td>{{book.description}}</td>
+  </tr>
+  <tr>
+    <td>
+      <button (click)="deleteBook(book.id)">Xoa</button>
+    </td>
+    <td><button [routerLink]="['/home']">Thoat</button></td>
+  </tr>
+</table>
