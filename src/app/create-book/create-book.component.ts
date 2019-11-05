@@ -9,7 +9,7 @@ class MemberService {
 @Component({
   selector: 'app-create-book',
   templateUrl: './create-book.component.html',
-  styleUrls: ['./create-book.component.scss']
+  styleUrls: ['./create-book.component.scss'],
 })
 export class CreateBookComponent implements OnInit {
   data: FormGroup;

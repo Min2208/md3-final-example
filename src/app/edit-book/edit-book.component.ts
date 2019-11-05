@@ -7,7 +7,7 @@ import {BookService} from '../book.service';
 @Component({
   selector: 'app-edit-book',
   templateUrl: './edit-book.component.html',
-  styleUrls: ['./edit-book.component.scss']
+  styleUrls: ['./edit-book.component.scss'],
 })
 export class EditBookComponent implements OnInit {
   book: BookInterface;

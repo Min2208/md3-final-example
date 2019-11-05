@@ -6,7 +6,8 @@ import {FormBuilder} from '@angular/forms';
 @Component({
   selector: 'app-list-book',
   templateUrl: './list-book.component.html',
-  styleUrls: ['./list-book.component.scss']
+  styleUrls: ['./list-book.component.scss'],
+  providers: [BookService]
 })
 export class ListBookComponent implements OnInit {
   lists: BookInterface[];

@@ -7,17 +7,23 @@
       <td>
         <input type="text" formControlName="title">
       </td>
+      <td *ngIf="data.get('title').invalid && data.get('title').touched"> Invalid Title!
+      </td>
     </tr>
     <tr>
       <td>Tac gia</td>
       <td>
         <input type="text" formControlName="author">
       </td>
+      <td *ngIf="data.get('author').invalid && data.get('author').touched"> Invalid Author!
+      </td>
     </tr>
     <tr>
       <td>Mo ta</td>
       <td>
         <input type="text" formControlName="description">
+      </td>
+      <td  *ngIf="data.get('description').invalid && data.get('description').touched"> Invalid Description!
       </td>
     </tr>
     <tr>
@@ -26,3 +32,4 @@
     </tr>
   </table>
 </form>
+
